@@ -1,9 +1,8 @@
 import React, { Component } from "react";
+import LandingPage from "./LandingPage";
 
-class App extends Component {
-	render() {
-		return <div>hello world</div>;
-	}
-}
+const App = () => {
+	return <LandingPage />;
+};
 
 export default App;
