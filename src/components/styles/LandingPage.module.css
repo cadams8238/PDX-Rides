@@ -14,11 +14,7 @@
 }
 
 .header {
-	/* grid-column-start: 2; */
-	/* grid-row-start: 2; */
-	/* align-self: center; */
 	grid-area: title;
-	/* border: 1px solid white; */
 }
 
 .verticalRule {
@@ -31,29 +27,33 @@
 .bikeIcon {
 	width: 5vw;
 	display: block;
-	/* justify-self: center; */
 	margin: 0 auto;
 }
 
 .h1_PDX {
-	font-size: 7em;
-	font-weight: bold;
+	font-size: 12em;
+	font-family: freight-sans-compressed-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 0.9;
 	margin: 0;
 }
 
 .h1_Rides {
-	font-size: 0.5em;
+	font-size: 0.32em;
+	font-family: freight-macro-pro, serif;
+	font-weight: 700;
+	font-style: normal;
 	text-transform: uppercase;
 	display: block;
 	letter-spacing: 0.25em;
 }
 
 .introDescription {
-	/* grid-column-start: 3; */
-	/* grid-row-start: 2; */
-	/* align-self: center; */
 	grid-area: description;
 	padding-left: 10%;
-	/* padding-right: 0; */
-	font-size: 1.75em;
+	font-size: 1.9em;
+	font-family: freight-macro-pro, serif;
+	font-weight: 400;
+	font-style: italic;
 }
