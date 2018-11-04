@@ -4,6 +4,7 @@ const LandingPage = () => {
 	return (
 		<div>
 			<header>
+				<img src={require("../assets/bike.svg")} alt="bike icon" />
 				<h1>
 					PDX <span>Rides</span>
 				</h1>
