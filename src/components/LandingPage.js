@@ -1,10 +1,15 @@
 import React from "react";
+import styles from "./styles/LandingPage.module.css";
 
 const LandingPage = () => {
 	return (
-		<div>
+		<div className={styles.background}>
 			<header>
-				<img src={require("../assets/bike.svg")} alt="bike icon" />
+				<img
+					className={styles.bikeIcon}
+					src={require("../assets/bike.svg")}
+					alt="bike icon"
+				/>
 				<h1>
 					PDX <span>Rides</span>
 				</h1>
