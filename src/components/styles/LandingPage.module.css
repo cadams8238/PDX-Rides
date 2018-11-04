@@ -4,13 +4,21 @@
 	min-height: 100vh;
 	color: white;
 	display: grid;
-	grid-template-columns: 1fr 2fr 2px 3fr 1fr;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 30px 1fr 1fr 30px;
+	grid-template-areas:
+		". . ."
+		". title ."
+		". description ."
+		". . .";
+	place-items: center center;
+	/* grid-template-columns: 1fr 2fr 2px 3fr 1fr;
 	grid-template-rows: 1fr 2fr 1fr;
 	grid-template-areas:
 		". . . . ."
 		". title line description ."
-		". . . . .";
-	place-items: center center;
+		". . . . ."; */
+	/* place-items: center center; */
 }
 
 .header {
@@ -18,14 +26,11 @@
 }
 
 .verticalRule {
-	grid-area: line;
-	background-color: white;
-	height: 100%;
-	width: 2px;
+	display: none;
 }
 
 .bikeIcon {
-	width: 5vw;
+	width: 15vw;
 	display: block;
 	margin: 0 auto;
 }
@@ -51,9 +56,37 @@
 
 .introDescription {
 	grid-area: description;
-	padding-left: 10%;
-	font-size: 1.9em;
+	font-size: 1.35em;
 	font-family: freight-macro-pro, serif;
 	font-weight: 400;
 	font-style: italic;
+}
+
+@media screen and (min-width: 800px) {
+	.background {
+		grid-template-columns: 1fr 2fr 2px 3fr 1fr;
+		grid-template-rows: 1fr 2fr 1fr;
+		grid-template-areas:
+			". . . . ."
+			". title line description ."
+			". . . . .";
+		/* place-items: center center; */
+	}
+
+	.bikeIcon {
+		width: 5vw;
+	}
+
+	.verticalRule {
+		display: initial;
+		grid-area: line;
+		background-color: white;
+		height: 100%;
+		width: 2px;
+	}
+
+	.introDescription {
+		padding-left: 10%;
+		font-size: 1.9em;
+	}
 }
