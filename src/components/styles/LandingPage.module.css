@@ -12,13 +12,6 @@
 		". description ."
 		". . .";
 	place-items: center center;
-	/* grid-template-columns: 1fr 2fr 2px 3fr 1fr;
-	grid-template-rows: 1fr 2fr 1fr;
-	grid-template-areas:
-		". . . . ."
-		". title line description ."
-		". . . . ."; */
-	/* place-items: center center; */
 }
 
 .header {
@@ -70,7 +63,6 @@
 			". . . . ."
 			". title line description ."
 			". . . . .";
-		/* place-items: center center; */
 	}
 
 	.verticalRule {
