@@ -4,20 +4,26 @@
 	color: white;
 	display: grid;
 	grid-template-columns: 1fr 2fr 3fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	box-sizing: border-box;
 }
 
 .header {
 	grid-column-start: 2;
+	grid-row-start: 2;
+	align-self: center;
+	border-right: 1px solid white;
 }
 
 .bikeIcon {
 	width: 5vw;
+	display: block;
 }
 
 .h1_PDX {
-	font-size: 5em;
+	font-size: 7em;
 	font-weight: bold;
-	margin-top: 0;
+	margin: 0;
 }
 
 .h1_Rides {
@@ -29,4 +35,9 @@
 
 .introDescription {
 	grid-column-start: 3;
+	grid-row-start: 2;
+	align-self: center;
+	padding: 10%;
+	padding-right: 0;
+	font-size: 1.75em;
 }
