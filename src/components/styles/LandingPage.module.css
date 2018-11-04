@@ -62,7 +62,7 @@
 	font-style: italic;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
 	.background {
 		grid-template-columns: 1fr 2fr 2px 3fr 1fr;
 		grid-template-rows: 1fr 2fr 1fr;
@@ -71,10 +71,6 @@
 			". title line description ."
 			". . . . .";
 		/* place-items: center center; */
-	}
-
-	.bikeIcon {
-		width: 5vw;
 	}
 
 	.verticalRule {
@@ -87,6 +83,26 @@
 
 	.introDescription {
 		padding-left: 10%;
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+	.header {
+		padding-right: 10%;
+	}
+
+	.bikeIcon {
+		width: 10vw;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.introDescription {
 		font-size: 1.9em;
+	}
+
+	.bikeIcon {
+		width: 6vw;
 	}
 }
