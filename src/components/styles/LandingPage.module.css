@@ -2,8 +2,31 @@
 	background-color: #50e3c2;
 	min-height: 100vh;
 	color: white;
+	display: grid;
+	grid-template-columns: 1fr 2fr 3fr 1fr;
+}
+
+.header {
+	grid-column-start: 2;
 }
 
 .bikeIcon {
-	width: 5%;
+	width: 5vw;
+}
+
+.h1_PDX {
+	font-size: 5em;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.h1_Rides {
+	font-size: 0.5em;
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 0.25em;
+}
+
+.introDescription {
+	grid-column-start: 3;
 }
