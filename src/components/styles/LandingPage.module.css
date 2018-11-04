@@ -1,15 +1,16 @@
 .background {
+	box-sizing: border-box;
 	background-color: #50e3c2;
 	min-height: 100vh;
 	color: white;
 	display: grid;
-	grid-template-columns: 1fr 2fr 3fr 1fr;
+	grid-template-columns: 1fr 2fr 2px 3fr 1fr;
 	grid-template-rows: 1fr 2fr 1fr;
 	grid-template-areas:
-		". . . ."
-		". title description ."
-		". . . .";
-	box-sizing: border-box;
+		". . . . ."
+		". title line description ."
+		". . . . .";
+	place-items: center center;
 }
 
 .header {
@@ -17,12 +18,21 @@
 	/* grid-row-start: 2; */
 	/* align-self: center; */
 	grid-area: title;
-	border-right: 1px solid white;
+	/* border: 1px solid white; */
+}
+
+.verticalRule {
+	grid-area: line;
+	background-color: white;
+	height: 100%;
+	width: 2px;
 }
 
 .bikeIcon {
 	width: 5vw;
 	display: block;
+	/* justify-self: center; */
+	margin: 0 auto;
 }
 
 .h1_PDX {

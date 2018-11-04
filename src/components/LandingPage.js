@@ -14,6 +14,7 @@ const LandingPage = () => {
 					PDX <span className={styles.h1_Rides}>Rides</span>
 				</h1>
 			</header>
+			<div className={styles.verticalRule} />
 			<p className={styles.introDescription}>
 				Portland, OR is known to be one of the best cities in the US for
 				bicyclists. Scroll to learn more about Portland bike culture and see why
