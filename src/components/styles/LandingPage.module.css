@@ -5,13 +5,18 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr 3fr 1fr;
 	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas:
+		". . . ."
+		". title description ."
+		". . . .";
 	box-sizing: border-box;
 }
 
 .header {
-	grid-column-start: 2;
-	grid-row-start: 2;
-	align-self: center;
+	/* grid-column-start: 2; */
+	/* grid-row-start: 2; */
+	/* align-self: center; */
+	grid-area: title;
 	border-right: 1px solid white;
 }
 
@@ -34,10 +39,11 @@
 }
 
 .introDescription {
-	grid-column-start: 3;
-	grid-row-start: 2;
-	align-self: center;
-	padding: 10%;
-	padding-right: 0;
+	/* grid-column-start: 3; */
+	/* grid-row-start: 2; */
+	/* align-self: center; */
+	grid-area: description;
+	padding-left: 10%;
+	/* padding-right: 0; */
 	font-size: 1.75em;
 }
