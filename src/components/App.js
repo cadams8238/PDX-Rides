@@ -1,8 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import LandingPage from "./LandingPage";
+import Overview from "./Overview";
 
 const App = () => {
-	return <LandingPage />;
+	return (
+		<Fragment>
+			<LandingPage />
+			<Overview />
+		</Fragment>
+	);
 };
 
 export default App;
