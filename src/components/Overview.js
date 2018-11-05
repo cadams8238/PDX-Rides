@@ -3,13 +3,13 @@ import styles from "./styles/Overview.module.css";
 
 const Overview = () => {
 	return (
-		<section>
-			<div>
-				<h2>Portland, OR</h2>
-				<p>
-					5<span>th</span>
+		<section className={styles.background}>
+			<div className={styles.rankingContent}>
+				<h2 className={styles.cityName}>Portland, OR</h2>
+				<p className={styles.rankingNumber}>
+					5<span className={styles.rankingSuperscript}>th</span>
 				</p>
-				<p>Best City for Bikes</p>
+				<p className={styles.rankingDescription}>Best City for Bikes</p>
 			</div>
 		</section>
 	);

@@ -1,3 +1,16 @@
-.hello {
-	color: blue;
+.background {
+	box-sizing: border-box;
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 1fr 5fr 2fr 1fr;
+	grid-template-areas:
+		". . . . . . . . . . . ."
+		". ranking ranking ranking ranking ranking barGraph barGraph barGraph barGraph barGraph ."
+		" . award award award commuters commuters commuters commuters commutersIncrease commutersIncrease commutersIncrease ."
+		". . . . . . . . . . . .";
+}
+
+.rankingContent {
+	grid-area: ranking;
 }
